@@ -3,6 +3,12 @@ public class Funcionario {
   private String documento;
   private double salario;
 
+  // es un metodo constructor es un método del mismo tipo de retorno de la clase y
+  // que puede aceptar parámetros o no para asignarlos a las variables aquí.
+  public Funcionario() {
+
+  }
+
   public String getNombre() {
     return nombre;
   }
