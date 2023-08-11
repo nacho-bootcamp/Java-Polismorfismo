@@ -33,4 +33,8 @@ public class Funcionario {
     this.salario = salario;
   }
 
+  public double getPlusSalario() {
+    return this.salario * 0.1;
+  }
+
 }
