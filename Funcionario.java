@@ -2,6 +2,7 @@ public class Funcionario {
   private String nombre;
   private String documento;
   private double salario;
+  private int tipo;
 
   // es un metodo constructor es un método del mismo tipo de retorno de la clase y
   // que puede aceptar parámetros o no para asignarlos a las variables aquí.
@@ -35,6 +36,12 @@ public class Funcionario {
 
   public double getPlusSalario() {
     return this.salario * 0.1;
+  }
+  public int getTipo(){
+    return this.tipo;
+  }
+  public void setTipo(int tipo){
+    this.tipo=tipo; 
   }
 
 }
