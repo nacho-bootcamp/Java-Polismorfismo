@@ -6,8 +6,12 @@ public class TestControlBonificacion {
     Gerente nacho = new Gerente();
     nacho.setSalario(50000);
 
+    Contador ariel = new Contador();
+    ariel.setSalario(100000);
+
     ControlBonificacion control = new ControlBonificacion();
     control.registrarSalario(nacho);
     control.registrarSalario(diego);
+    control.registrarSalario(ariel);
   }
 }
