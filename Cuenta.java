@@ -1,6 +1,6 @@
 
 public abstract class Cuenta {
-  private double saldo1;
+  protected double saldo1;
   private int agencia;
   int numero;
   crearUsuario titular;
@@ -22,9 +22,7 @@ public abstract class Cuenta {
     }
   }
 
-  public void depositar(double valor) {
-    this.saldo1 += valor;
-  }
+  public abstract void depositar(double valor);
 
   public boolean retirar(double valor) {
     if (this.saldo1 >= valor) {
