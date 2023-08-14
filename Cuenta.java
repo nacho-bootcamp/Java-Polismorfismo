@@ -1,5 +1,5 @@
 
-class Cuenta {
+public abstract class Cuenta {
   private double saldo1;
   private int agencia;
   int numero;

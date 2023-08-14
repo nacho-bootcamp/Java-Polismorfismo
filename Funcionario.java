@@ -1,6 +1,7 @@
 public abstract class Funcionario {
   // cuando una clae es abstracta no podemos instanciarla
-  // porque es abstracta y no fisica
+  // porque es abstracta y no fisica.
+  //
   private String nombre;
   private String documento;
   private double salario;
@@ -36,9 +37,9 @@ public abstract class Funcionario {
     this.salario = salario;
   }
 
-  public double getPlusSalario() {
-    return this.salario * 0.1;
-  }
+  public abstract double getPlusSalario();
+  // todo método abstracto, de reglas abstractas, tiene que ser implementado por
+  // la clase que está extendiendo esa clase abstracta.
 
   public int getTipo() {
     return this.tipo;
