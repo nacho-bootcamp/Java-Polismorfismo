@@ -1,4 +1,6 @@
-public class Funcionario {
+public abstract class Funcionario {
+  // cuando una clae es abstracta no podemos instanciarla
+  // porque es abstracta y no fisica
   private String nombre;
   private String documento;
   private double salario;
@@ -37,11 +39,13 @@ public class Funcionario {
   public double getPlusSalario() {
     return this.salario * 0.1;
   }
-  public int getTipo(){
+
+  public int getTipo() {
     return this.tipo;
   }
-  public void setTipo(int tipo){
-    this.tipo=tipo; 
+
+  public void setTipo(int tipo) {
+    this.tipo = tipo;
   }
 
 }

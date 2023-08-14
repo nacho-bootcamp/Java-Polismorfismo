@@ -1,6 +1,6 @@
 public class TestFuncional {
   public static void main(String[] args) {
-    Funcionario diego = new Funcionario();
+    Funcionario diego = new Gerente();
     diego.setNombre("Diego");
     diego.setDocumento("3245235235");
     diego.setSalario(234423);
