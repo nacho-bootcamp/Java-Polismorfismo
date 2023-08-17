@@ -22,7 +22,7 @@ public abstract class Cuenta {
     }
   }
 
-  public abstract void depositar(double valor);
+  public abstract boolean depositar(double valor);
 
   public boolean retirar(double valor) {
     if (this.saldo1 >= valor) {

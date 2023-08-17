@@ -7,8 +7,9 @@ public class CuentaAhorro extends Cuenta {
   }
 
   @Override
-  public void depositar(double valor) {
+  public boolean depositar(double valor) {
     this.saldo1 += valor;
+    return false;
   }
 
 }

@@ -1,16 +1,5 @@
-public class Administrador extends Funcionario {
+public class Administrador extends FuncionarioAutenticado {
 
-  private String clave;
-
-  public void setClave(String clave) {
-    this.clave = clave;
-  }
-
-  public boolean iniciarSesion(String clave) {
-    return clave == "AluraCurso";
-  }
-
-  @Override
   public double getPlusSalario() {
     return 0;
   }
