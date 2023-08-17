@@ -3,6 +3,7 @@ public class Cliente implements Autenticado {
   private String nombre;
   private String documento;
   private String tel;
+  private String clave;
 
   public String getNombre() {
     return nombre;
@@ -10,13 +11,30 @@ public class Cliente implements Autenticado {
 
   @Override
   public void setClave(String clave) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'setClave'");
+    this.clave = clave;
   }
 
   @Override
   public boolean iniciarSesion(String clave) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'iniciarSesion'");
+    if (this.clave == clave) {
+      return true;
+    }
+    return false;
+  }
+
+  public void getTel(String tel) {
+    this.tel = tel;
+  }
+
+  public String setTel() {
+    return tel;
+  }
+
+  public void getDocumento(String documento) {
+    this.documento = documento;
+  }
+
+  public String setDocumento() {
+    return documento;
   }
 }
