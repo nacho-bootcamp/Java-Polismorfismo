@@ -1,7 +1,19 @@
-public class Gerente extends FuncionarioAutenticado {
+public class Gerente extends Funcionario implements Autenticado {
 
   public double getPlusSalario() {
-    return super.getPlusSalario() + this.getPlusSalario();
+    return 2000;
+  }
+
+  @Override
+  public void setClave(String clave) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'setClave'");
+  }
+
+  @Override
+  public boolean iniciarSesion(String clave) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'iniciarSesion'");
   }
 }
 

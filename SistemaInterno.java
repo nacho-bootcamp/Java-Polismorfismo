@@ -2,7 +2,7 @@ public class SistemaInterno {
 
   private String clave = "12345";
 
-  public boolean autenticat(FuncionarioAutenticado admin) {
+  public boolean autenticat(Autenticado admin) {
     boolean puedeIniciarSesion = admin.iniciarSesion(clave);
 
     if (puedeIniciarSesion) {
