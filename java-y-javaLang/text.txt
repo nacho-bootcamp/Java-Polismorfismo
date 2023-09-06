@@ -24,3 +24,16 @@ private (visible solo en clase)
 protected (visible en la clase y en cualquier otro miembro del mismo paquete y para cualquier hijo)
 public (visible en cualquier paquete)
 Los modificadores pueden ser usados en la definición de la clase, atributo, constructor y método.
+
+
+En esta clase sobre arrays aprendimos:
+
+Un array es una estructura de datos y se usa para almacenar elementos (valores primitivos o referencias)
+Los arrays usan corchetes ([]) sintácticamente
+¡Los arrays tienen un tamaño fijo!
+¡Un array también es un objeto!
+Los arrays son zero-based(el primer elemento se encuentra en la posición 0)
+Un array siempre se inicializa con los valores padron.
+Al acceder a una posición no válida recibimos la excepción ArrayIndexOutOfBoundException
+Las matrices tienen un atributo length para conocer el tamaño
+La forma literal de crear un array, utilizando llaves {}.
